@@ -1,6 +1,6 @@
 import { Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
 import React, { useState, useEffect } from 'react';
-
+import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing'
 export default function Experience() {
     const computer = useGLTF("https://xtrzhhqgwlrpeadwqpwp.supabase.co/storage/v1/object/public/models/cyberpunk_laptop_concept_design-transformed.glb?t=2023-07-24T04%3A40%3A08.134Z")
     function DoubleTap({ onDoubleTap, children }) {
@@ -27,11 +27,10 @@ export default function Experience() {
     }
     return <>
 
-        <color args={['#063970']} />
-
-        <Environment preset="city" />
+        <color args={['black']} />
 
 
+        
         <PresentationControls
             global
             rotation={[0.13, 0.1, 0]}
@@ -45,7 +44,7 @@ export default function Experience() {
                     width={2.5}
                     height={1.65}
                     intensity={65}
-                    color={'#ff6900'}
+                    color={'offwhite'}
                     rotation={[- 0.1, Math.PI, 0]}
                     position={[0, 0.55, - 1.15]}
                 />
