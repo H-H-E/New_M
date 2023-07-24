@@ -2,7 +2,7 @@ import { Text, Html, ContactShadows, PresentationControls, Float, Environment, u
 import React, { useState, useEffect } from 'react';
 
 export default function Experience() {
-    const computer = useGLTF("https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf")
+    const computer = useGLTF("https://xtrzhhqgwlrpeadwqpwp.supabase.co/storage/v1/object/public/models/cyberpunk_laptop_concept_design-transformed.glb?t=2023-07-24T04%3A40%3A08.134Z")
     function DoubleTap({ onDoubleTap, children }) {
         const [tap, setTap] = useState(false);
     
@@ -54,9 +54,9 @@ export default function Experience() {
 
                 <primitive
                     object={computer.scene}
-                    position-y={-1.2}
+                    position-y={-0.2}
                     rotation-y={-0.7}
-
+                    scale={0.01}
                    onDoubleClick={() => window.location.href = 'https://m2.poiesis.education'}
                 >
 
@@ -64,9 +64,10 @@ export default function Experience() {
                         transform
                         wrapperClass="htmlScreen"
                         distanceFactor={1.17}
-                        position={[0, 1.56, - 1.4]}
-                        rotation-x={- 0.256}
-                        scale={1.25}
+                        position={[0, 50, - 7]}
+                        rotation-x={- 0.356}
+                        scale={80}
+                       
                     >
                         <iframe src="https://m2.poiesis.education/" />
                     </Html>
